@@ -1,49 +1,70 @@
-.container{
-    max-width: 375px;
-    margin: 0 auto;
-background-color: #FBFBFB;
+.promo.section {
+  background: #fbfbfb;
+}
 
+.promo.section .container {
+  padding: 0 10px;
 }
-    
-.section{
-    padding-top: 40x;
-    padding-bottom: 40px;
-    margin:0 auto; 
+
+.promo-text-fill {
+  display: block;
+  padding: 3px 10px;
+  color: #fbfbfb;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  border-radius: 12px;
+  background-color: #576f35;
 }
-.visually-hidden{
-    position: absolute;
-    width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   clip-path: inset(100%);
-   clip: rect(0 0 0 0);
-   overflow: hidden;
+
+.promo-text {
+  display: block;
+  padding: 0 10px;
+  color: #141414;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
 }
-.text{
-    color: #141414;
-font: 600 48px / 104% var(--font-family);
-letter-spacing: -0.01em;
-text-transform: uppercase;
-color: var(--main-text);
-position: fixed;
-}
-.discount{
-    color:#FBFBFB;
- background-color: #576F35;
-}
+
 @media screen and (min-width: 768px) {
-    .section{
-      margin: 0 auto;
-      padding: 32px 0;
-    }
+  .promo.section .container {
+    padding: 0 16px;
   }
-  
-  @media screen and (min-width: 1280px) {
-    .section{
-      margin: 0 auto;
-      padding: 50px 0;
-    }
+
+  .promo-text-fill {
+    padding: 8px 16px;
+    font-size: 64px;
+    line-height: 1.09;
   }
+
+  .promo-text {
+    padding: 0 16px;
+    font-size: 64px;
+    line-height: 1.09;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .promo.section .container {
+    padding: 0 100px;
+  }
+
+  .promo-text-fill {
+    display: inline-block;
+    padding: 0 13px;
+    font-size: 76px;
+    line-height: 1.05;
+  }
+
+  .promo-text {
+    display: inline-block;
+    display: inline;
+    padding: 0 13px;
+    font-size: 76px;
+    line-height: 1.05;
+  }
+}
