@@ -140,4 +140,8 @@ li > .text-last {
     .benefits  { 
       background-image: url("../img/6-benefits/decor bg 32x.png"); 
     } 
+    .moving-image {
+      width: 200px; /* Ширина зображення */
+      animation: moveUpDown 2s infinite alternate;
+  }
   } 
