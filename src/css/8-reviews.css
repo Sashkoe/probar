@@ -1,13 +1,109 @@
-.reviews-container {
-  background-color: aqua;
-  color: rgb(79, 118, 35);
+.reviews__h2 {
+  color: var(--Black);
+  font-family: Impact;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-@media screen and (min-width: 360px) {
+.reviews__item {
+  height: auto !important;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--Accent-tertiary);
 }
 
-@media screen and (min-width: 768px) {
+.reviews__card__container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  justify-content: space-between;
+  height: 100%;
 }
 
-@media screen and (min-width: 1280px) {
+.reviews__person {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reviews__img {
+  border-radius: 24px;
+  width: 40px;
+  height: 40px;
+}
+
+.reviews__h3 {
+  color: var(--Black);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.reviews__descr {
+  color: var(--Black);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.reviews__arrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.reviews__arrow-left,
+.reviews__arrow-right {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--Button);
+  stroke: var(--Black);
+  fill: transparent;
+}
+
+.reviews__arrow-left:hover,
+.reviews__arrow-right:hover {
+  background-color: var(--Accent-tertiary);
+}
+
+.disabled_btn {
+  border: 1px solid var(--Button-disabled);
+  stroke: var(--Arrow-disabled);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .reviews__h2 {
+    font-size: 108px;
+    font-style: normal;
+    line-height: 124px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__h2 {
+    margin-bottom: 80px;
+  }
+
+  .reviews__arrow {
+    gap: 24px;
+  }
 }
