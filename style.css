@@ -1,81 +1,37 @@
-.advertisement.section{
-  background: #fbfbfb;
+body {
+  font-family: Arial, sans-serif;
 }
 
-.advertisement.section .container{
-  padding: 0 10px;
+.film-library {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+
+.film-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
   overflow: hidden;
+  width: 200px;
 }
-.discount {
+
+.film-card img {
+  width: 100%;
+  height: auto;
+}
+
+.film-card .film-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.load-more {
   display: block;
-  padding: 3px 10px;
-  color: #fbfbfb;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.04;
-  letter-spacing: -0.015em;
-  text-transform: uppercase;
-  border-radius: 12px;
-  background-color: #576f35;
-}
-
-.text {
-  display: block;
-  padding: 0 10px;
-  color: #141414;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.04;
-  letter-spacing: -0.015em;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) {
-  .advertisement.section .container{
-    padding: 0 16px;
-  }
-
-  .discount {
-    padding: 8px 16px;
-    font-size: 64px;
-    line-height: 1.09;
-  }
-
-  .text {
-    padding: 0 16px;
-    font-size: 64px;
-    line-height: 1.09;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advertisement.section .container {
-    padding: 0 100px;
-  }
-
-  .discount {
-    display: inline-block;
-    padding: 0 13px;
-    font-size: 76px;
-    line-height: 1.05;
-  }
-
-  .text {
-    display: inline-block;
-    display: inline;
-    padding: 0 13px;
-    font-size: 76px;
-    line-height: 1.05;
-  }
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
