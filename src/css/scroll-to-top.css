@@ -1,0 +1,45 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 99999;
+  border-radius: 50%;
+}
+.scroll-to-top-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke: black;
+  fill: transparent;
+  transition: stroke 0.3s ease;
+}
+
+.scroll-to-top-icon:hover {
+  stroke: #009156;
+}
+
+/* Night mode */
+
+.night-mode .scroll-to-top-icon {
+  stroke: #fff;
+}
+
+.night-mode .scroll-to-top-icon:hover {
+  stroke: #009156;
+}
+
+.scroll-to-top:hover > .scroll-to-top-icon {
+  border-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-to-top {
+    bottom: 50px;
+    right: 50px;
+  }
+}
