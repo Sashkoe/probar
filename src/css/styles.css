@@ -1,0 +1,107 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import 'modern-normalize';
+@import url('./reset.css');
+@import url('./1-header.css');
+@import url('./2-hero.css');
+@import url('./3-about-me.css');
+@import url('./4-tech-skills.css');
+@import url('./5-my-projects.css');
+@import url('./6-benefits.css');
+@import url('./7-faq.css');
+@import url('./8-reviews.css');
+@import url('./9-work-together.css');
+@import url('./10-footer.css');
+@import url('./11-modal-window');
+@import url('./scroll-to-top.css');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: Impact;
+  src: url(./../font/impact.ttf);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #292929;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.night-mode {
+  background-color: #1e2023;
+  color: #f0f0f0;
+}
+
+.section {
+  padding-top: 80px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 360px) {
+  container {
+    width: 360px;
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section {
+    padding-top: 124px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+
+  .section {
+    padding-top: 164px;
+  }
+}
