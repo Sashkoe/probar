@@ -1,0 +1,410 @@
+.work-together-container {
+}
+
+.together-title {
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.together-title-green {
+  color: #00b068;
+}
+
+.contacts-and-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.together-contacts-container {
+  margin-bottom: 40px;
+}
+
+.together-contacts-title {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.together-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.together-contacts-item {
+  position: relative;
+}
+
+.together-svg {
+  fill: transparent;
+  stroke: #00b068;
+  position: absolute;
+}
+
+.together-contacts-link {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.003em;
+  margin-left: 40px;
+  transition: color 0.3s ease;
+}
+
+.together-contacts-link:hover {
+  color: #009156;
+}
+
+.together-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.together-email {
+  width: 100%;
+  height: 48px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #e4e5e6;
+  transition: outline 0.1s ease;
+}
+
+.together-email:focus {
+  outline: 2px solid #009156;
+}
+
+.together-text {
+  width: 100%;
+  height: 128px;
+  border-radius: 8px;
+  padding: 16px;
+  border: none;
+  background: #e4e5e6;
+  resize: none;
+  transition: outline 0.1s ease;
+}
+
+.together-text:focus {
+  outline: 2px solid #009156;
+}
+
+.together-email::placeholder,
+.together-text::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03rem;
+  color: rgba(41, 41, 41, 0.4);
+}
+
+.together-button {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: #00b068;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  transition: background 0.3s ease;
+}
+
+.together-button:hover {
+  background: #009156;
+}
+
+@media screen and (min-width: 360px) {
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .work-together-container {
+    background-image: url(../img/9-work-together/together-tablet.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .work-together-container {
+      background-image: url(../img/9-work-together/together-tablet2x.png);
+    }
+  }
+
+  .together-title {
+    font-size: 108px;
+    line-height: 1.14;
+    letter-spacing: 0.016em;
+    margin-bottom: 60px;
+    max-width: 530px;
+  }
+
+  .together-contacts-container {
+    margin-bottom: 60px;
+  }
+
+  .together-contacts-title {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+    max-width: 488px;
+  }
+
+  .together-contacts-list {
+    flex-direction: row;
+  }
+
+  .together-form {
+    margin-bottom: 124px;
+  }
+
+  .together-button {
+    width: 173px;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+  .work-together-container {
+    background-image: url(../img/9-work-together/together-desktop.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .work-together-container {
+      background-image: url(../img/9-work-together/together-desktop2x.png);
+    }
+  }
+
+  .together-title {
+    margin-bottom: 80px;
+  }
+  .contacts-and-form {
+    flex-direction: row;
+    gap: 136px;
+  }
+
+  .together-contacts-container {
+    margin-bottom: 0;
+  }
+
+  .together-contacts-title {
+    margin-bottom: 120px;
+  }
+
+  .together-contacts-list {
+    flex-direction: column;
+  }
+
+  .together-form {
+    margin-bottom: 164px;
+    flex-grow: 1;
+  }
+}
+
+/* Together Modal Window */
+
+.together-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #1e2023cc;
+}
+
+.together-modal-content {
+  width: 320px;
+  height: 328px;
+  padding: 48px 32px 48px 32px;
+  border-radius: 16px;
+  background: #f0f0f0;
+  position: relative;
+}
+
+.together-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.together-modal-svg {
+  stroke-width: 2px;
+  stroke: black;
+}
+
+.together-modal-svg:hover {
+  stroke: #009156;
+}
+
+.together-modal-title {
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: #00b068;
+}
+
+.together-modal-text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .together-modal-content {
+    width: 492px;
+    height: 280px;
+    padding: 64px;
+  }
+}
+
+/* Night mode */
+
+/* Section 9 */
+
+.night-mode .together-title-green {
+  color: #14c57c;
+}
+
+.night-mode .together-svg {
+  color: #14c57c;
+}
+
+.night-mode .together-button {
+  background-color: #14c57c;
+}
+
+.night-mode .together-button:hover {
+  background-color: #009156;
+}
+
+.night-mode .together-email {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.night-mode .together-text {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.night-mode .together-email::placeholder {
+  color: #575252;
+}
+
+.night-mode .together-text::placeholder {
+  color: #575252;
+}
+
+/* Together modal*/
+.night-mode .together-modal-svg {
+  stroke: #f0f0f0;
+}
+
+.night-mode .together-modal-svg:hover {
+  stroke: #14c57c;
+}
+
+.night-mode .together-modal-content {
+  background-color: #2a2d32;
+}
+
+/* VALID IMAIL */
+
+.together-icon-ok {
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  stroke: #fff;
+  fill: #00b068;
+}
+
+.night-mode .together-icon-ok {
+  stroke: #fff;
+  fill: #14c57c;
+}
+
+.together-input-ok {
+  outline: 2px solid #00b068;
+  background-color: #e4e5e6;
+}
+
+.night-mode .together-input-ok {
+  outline-color: #14c57c;
+  background-color: #2a2d32;
+}
+
+/* ERRORS */
+
+.position-together-error {
+  position: relative;
+}
+
+.together-text-error {
+  display: none;
+  color: #f05748;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: 0.041em;
+  position: absolute;
+  top: 50px;
+}
+
+.together-input-error {
+  outline-color: #f05748;
+}
