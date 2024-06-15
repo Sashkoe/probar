@@ -1,0 +1,298 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-title-container {
+  max-width: 100%;
+}
+
+.about-title {
+  display: block;
+  font-family: Impact;
+  font-size: 52px;
+  letter-spacing: 1.8px;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  width: 320px;
+  max-width: 100%;
+}
+
+.about-title-span {
+  color: #00b068;
+}
+
+.about-photo {
+  display: inline-block;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-bio-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 320px;
+}
+
+.about-me-title {
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  padding-top: 40px;
+
+  width: 100%;
+}
+
+.about-bio-text {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  margin-bottom: 24px;
+
+  width: 100%;
+}
+
+.about-education-list,
+.about-role-list {
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  padding-left: 20px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.about-education-list::before,
+.about-role-list::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00b068;
+}
+
+.about-education-list:not(:last-child),
+.about-role-list:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.about-role-menu {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 360px) {
+  .about-back-img {
+    display: none;
+  }
+
+  .about-me-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-education-menu {
+    padding-left: 10px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .about-back-img {
+    display: none;
+  }
+
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-education-menu {
+    padding-left: 10px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 100%;
+  }
+
+  .about-photo {
+    margin-top: 336px;
+    max-width: 336px;
+    height: 392px;
+  }
+
+  .about-photo img {
+    width: 336px;
+    height: 392px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 40px;
+  }
+
+  .about-bio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  .about-title {
+    font-size: 108px;
+    letter-spacing: 1.8px;
+    line-height: 124px;
+    width: 768px;
+  }
+
+  .about-me-title {
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .about-bio-text {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    width: 336px;
+  }
+
+  .about-bio {
+    position: relative;
+  }
+
+  .about-bio::after {
+    content: '';
+    position: absolute;
+    bottom: -165px;
+    right: 0;
+    width: 336px;
+    height: 252px;
+    background: url(../img/3-about-me/about-bg.png) no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .about-me-portfolio {
+    display: flex;
+    width: 704px;
+  }
+
+  .about-education-menu {
+    padding-left: 10px;
+    max-width: 320px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .about-bio::after {
+      background: url(../img/3-about-me/about-bg@2x.png) no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.about-me-portfolio {
+  gap: 32px;
+  position: relative;
+  z-index: 0;
+}
+
+.about-education {
+  width: 100%;
+  max-width: 384px;
+}
+
+.about-role {
+  width: 100%;
+  max-width: 384px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-title {
+    width: 1280px;
+  }
+  .about-bio-container {
+    justify-content: end;
+    gap: 0;
+  }
+
+  .about-photo {
+    margin-top: 270px;
+    margin-right: 136px;
+    width: 384px;
+    height: 448px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
+
+  .about-bio-text {
+    width: 100%;
+    max-width: 488px;
+  }
+
+  .about-bio::after {
+    width: 384px;
+    height: 288px;
+    bottom: -50px;
+  }
+
+  .about-me-portfolio {
+    gap: 0;
+  }
+
+  .about-education {
+    margin-right: 136px;
+  }
+
+  .about-education-menu {
+    width: 384px;
+  }
+}
